@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #A52A2A;
+    --font-family: "Catamaran";
+    --font-size: medium;
+    --line-height: 11%;
+    --letter-spacing: 12px;
+    --color: #000;
+}
+
+.container {
+    max-width: 560px;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+#topo_cabecalho{
+    background-color: var(--bg-color);
+    /* padding: 8px; */
+}
+
+#topo_cabecalho .container{
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_container {
+    width: 100px;
+}
+
+.logo_container img {
+    width: 100%;
+    /* padding-left: 5%; */
+}
+
+.text-navbar{
+    display:  flex;
+    column-gap: 16px;
+}
+
+.text-navbar a{
+    font-family: var(--font-family);
+    font-size: 11.9px;
+    line-height: var(--line-height);
+    text-decoration: none;
+    color: var(--color);
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.cabecalho_icones i{
+    /* display: flex; */
+    font-size: 13px;
+}
+
+#header-banner{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+}
+
+#header-banner img{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: var(--bg-color);
+    color: var(--color);
+    font-family: var(--font-family);
+    font-size: xx-small;
+    letter-spacing: var(--letter-spacing);
+    font-weight: 200;
+}
+
+.container-imagens{
+    padding: 0 2%;
+    display: flex;
+    column-gap: 12px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.imagem img{
+    width: 100%;
+    height: auto;
+}
+
+.grid-imagem{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.empresas{
+    background-color: var(--bg-color);
+    height: 500px;
+    margin: 5% 0;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; */
+    text-align: center;
+}
+
+.texto{
+    color: white;
+    font-family: var(--font-family);
+    letter-spacing: var(--letter-spacing);
+    text-align: center;
+    font-size: xx-small;
+    padding: 3% 0;
+}
+
+.logo-empresas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 90px;
+    /* width: 90%; */
+    padding: 2%;
+    align-items: center;
+}
+
+.coluna-cima{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center; 
+    justify-items: center;
+    width: 100%;
+}
+
+.coluna-cima img{
+    width: 100%;
+}
+
+.coluna-baixo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.coluna-baixo img{
+    width: 100%;
+}
+
+@media (min-width: 990px) {
+    #topo_cabecalho .container {
+        max-width: 100%;
+        padding: 0 10%;
+    }
+    .navbr{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .text-navbar{
+        column-gap: 200px;
+    }
+    .text-navbar a{
+        font-size: 25px;
+    }
+    .logo_container{
+        width: 200px;
+    }
+    .logo_container img{  
+        padding: 20px;
+    }
+    .cabecalho_icones i{
+        font-size: 23px;
+        display: flex;
+        flex-direction: row;
+    }
+    #header-banner{
+        width: auto;
+    }
+    #header-banner img{
+        width: 280%;
+    }
+    .linha{
+        height: 50px;
+        font-size: x-large;
+        letter-spacing: 25px;
+    }
+    .container-imagens{
+        padding: 0 2px;
+        display: flex;
+        column-gap: 12px;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    #maior img{
+        width: 400px;
+    }
+    .imagem img{
+        width: 280px;
+        height: auto;
+    }
+    .grid-imagem{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    
+    
+}
