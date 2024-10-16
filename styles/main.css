@@ -110,7 +110,16 @@
 }
 
 .comunidade{
-    height: 500px;
+    height: 350px;
+}
+
+.comunidade h3{
+    font-family: var(--font-family);
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-size: medium;
+    color: var(--color);
+    text-align: justify;
 }
 
 .icones-dir{
@@ -118,6 +127,7 @@
     grid-template-columns: 2fr 1fr;
     align-items: center;
     padding: 3%;
+    justify-items: center;
 }
 
 .icones-esq{
@@ -125,7 +135,102 @@
     grid-template-columns: 1fr 2fr;
     align-items: center;
     padding: 3%;
+    justify-items: center;
 }
+
+.tituloBloco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 8%;
+    text-align: center;
+}
+
+.tituloBloco h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: medium;
+    color: var(--color);
+    text-align: center;
+    text-decoration: solid;
+}
+
+.bloco{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 100%;
+    height: 500px;
+}
+
+.enderecos{
+    background-color: #FA8072;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.enderecos h2{
+    font-family: var(--font-family);
+    font-size: medium;
+}
+
+.formContato{
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.blocoFormulario{
+    width: 200px;
+    height: 350px;
+    background-color: #9c9a9a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.blocoFormulario label{
+    font-family: var(--font-family);
+    font-size: 20px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
+.blocoFormulario input{
+    border: 1px solid #000;
+    border-radius: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 2%;
+    height: 30px;
+    width: 180px;
+    
+}
+
+.blocoFormulario input[name="corpoTexto"]{
+    height: 80px;
+}
+
+.blocoFormulario [type="submit"]{
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    width: 60px;
+}
+
+
 
 @media (min-width: 550px){
     .empresas{
@@ -194,5 +299,18 @@
     .linhaObj h2{
         font-size: x-large;
         font-weight: 600;
+    }
+
+    .comunidade{
+        height: 500px;
+    }
+
+    .comunidade i{
+        font-size: 35px;
+    }
+
+    .comunidade h3{
+        font-weight: 500;
+        font-size: x-large;
     }
 }
